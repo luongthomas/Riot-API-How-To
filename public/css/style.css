@@ -1,0 +1,18 @@
+
+
+/* Base styles */
+
+.wrapper {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
+
+.jumbotron {
+  background-color: lightblue;
+}
+
+body {
+  background-color: lightgrey;
+
+}

@@ -1,0 +1,33 @@
+<h2 class="page-header">Getting Started</h2>
+
+<p>Before delving into the Petabytes of data that Riot Games provides to the public, we must take our first steps to getting a key.</p>
+    
+<p>An API key is important here to identify each user that wants to pull information from their server.  It also ensures that developers such as yourself, are not making too many data requests.  The reason why there are limits to making calls is because the servers that powers the hundreds of thousands of League of Legends at this very moment, is the same one that will be serving us the data that we requested.</p>
+
+<p>So if we were able to request a exponential buttload of data at a time, we would lower the quality of the connection that the players have thus, their experience would not be as plesant.  Riot Games prioritizes the players so if we abuse our key and make more calls than we are allowed, then we our key might lose its functionality.  </p>
+
+<h3>Registering With Riot Games</h3>
+<p>It is required that you have a League of Legends account.  If you do not have one, <a href="https://signup.na.leagueoflegends.com/en/signup/index">click here to register</a></p>
+
+<p>Once you have signed up for an account, you may sign up to be a developer.   <a href="https://developer.riotgames.com/">Click here to sign up</a>.  Signing up for a developer account makes use of your League of Legends account that you jst signed up with, and they are both linked together.  </p>
+
+<p>After doing those steps, you should be on the developer webpage <code>https://developer.riotgames.com/</code>.  After visiting the developer page, you should see Your Dashboard.  Scrolling down you should see this:</p>
+
+
+<h3>MY DEVELOPMENT API KEY</h3>
+<pre class="prettyprint">
+  <b>         Key:</b> ????????-????-????-????-????????????
+  <b>Rate Limit(s)</b> 10 requests every 10 seconds
+                500 requests every 10 minutes
+</pre>
+
+<p>In the example that I have above, there are question marks where the development API key should be.  This is because it is a good idea to keep our API Keys to ourselves.  If anyone gets access to it, they can make many calls and possibly have our keys revoked where we cannot use our keys anymore.  I recommend hiding it in your API calls if you use it in an application.  For our purposes, we will be making calls in the URL so it should be okay.</p>
+
+<p>Also, if you ever think that your key was comprimised by someone else, you have the option on your Dashboard page, to recycle your existing key to another key.  Thus someone who has your key won't be able to make any calls in your name.</p>
+
+
+
+<h3>Registering Applications</h3>
+<p>If you do end up making a wonder application that makes more calls daily, (more calls than 500 requests every 10 minutes as per my rate limit), the web application can be registered at the bottom of the Dashboard.  This is where it will be reviewed by the Riot Games team to ensure that it adheres to all the Riot Games rules.  If it is approved, it will be given a special Key where it can make more requests from the Riot server.  Hoorah!</p>
+
+<h5 align="center">Next we will discuss making API calls</h5>

@@ -1,0 +1,34 @@
+<h2 class="page-header">API Calls</h2>
+
+<p>Alright, enough with the setup, lets get started with making calls.</p>
+
+<code>https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/Lithogen?api_key=(YourKeyHere)
+</code>
+<p>
+If you enter this URL into your browser, you should get back a JSON file.  It will come up an error.  But JSON nonetheless.  Great!  To make this call more effective, replace <code>(YourKeyHere)</code> with the API Key that you recieved one page ago.  Now if you try this again, the server should send a JSON file that looks like such.  
+</p>
+<pre class="prettyprint linenums">
+  {"lithogen":{"id":26118426,"name":"Lithogen","profileIconId":937,"summonerLevel":30,"revisionDate":1457340639000}}
+</pre>
+<br>
+<h3>JSON Protip</h3>
+<p>The call we just made is great, we recieved data back about the user "Lithogen" which is my username in League of Legends (feel free to add me).  This format is fine for short JSON files that are only a couple Key-Value pairs long.  But most calls that we'll be making will be much much larger.  In this case, it would be helpful to have a JSON formatter that will format the JavaScript Object in more readable and organized manner.  Many browers these days have extensions available to download.  For Chrome, visit this link to install a JSON Formatter.  Once installed, make sure it is enabled and refresh your API call again.  This time, it will look like such:</p>
+<pre class="prettyprint linenums">
+{
+  "lithogen": {
+    "id": 26118426,
+    "name": "Lithogen",
+    "profileIconId": 937,
+    "summonerLevel": 30,
+    "revisionDate": 1457340639000
+  }
+}
+</pre>
+
+<h4>Much cleaner.</h4>
+<br>
+<p>We can see in the "Lithogen" Object, that there are key-pair values for the  player.  My player ID is 26118426, the icon  ID is 937, which is a picture of a fluffy animal.  The Player Level is 30.  This is the information we recieved for this player.  If you have a League of Legends account, and you have logged on at least once where you signed up for a summoner name, you can substitute <code>Lithogen</code> in the URL with your summoner name.  The data you recieve will be different than the one on this page.</p>
+<br>
+<br>
+
+<h4 align="center">For the next page, we'll be learning about the static data that Riot Gate provides for us.  </h4>
